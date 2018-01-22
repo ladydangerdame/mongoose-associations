@@ -37,7 +37,7 @@ Location: SF
 
 ### Numerical Categories for Relationships
 
-###One-to-One
+### One-to-One
 
 Each person has one brain, and each (living human) brain belongs to one person.
 
@@ -50,14 +50,14 @@ One-to-one relationships can sometimes just be modeled with simple attributes. A
 
 
 
-###One-to-Many
+### One-to-Many
 
 Each leaf "belongs to" the one tree it grew from, and each tree "has many" leaves.
 
 ![one to many erd example](https://cloud.githubusercontent.com/assets/3254910/18182445/e4bddb6c-7044-11e6-9099-314b773724f3.png)
 
 
-###Many-to-Many
+### Many-to-Many
 
 Each student "has many" classes they attend, and each class "has many" students.
 
@@ -65,7 +65,7 @@ Each student "has many" classes they attend, and each class "has many" students.
 ![many to many erd example](https://cloud.githubusercontent.com/assets/3254910/18140903/4c56c3ee-6f6c-11e6-9b6d-4c6ffae81323.png)
 
 
-####Entity Relationship Diagrams
+#### Entity Relationship Diagrams
 
 Entity relationship diagrams (ERDs) represent information about the numerical relationships between data, or entities.
 
@@ -76,11 +76,11 @@ Note: In the example above, all of the Item1, Item2, Item3 under each heading ar
 
 [More guidelines for ERDs](http://docs.oracle.com/cd/A87860_01/doc/java.817/a81358/05_dev1.htm)
 
-####Check for Understanding
+#### Check for Understanding
 
 Come up with an example of related data.  Draw the ERD for your relationship, including a few attributes for each model. 
 
-###Association Categories for Mongoose
+### Association Categories for Mongoose
 
 **Embedded Data** is directly nested *inside* of other data. Each record has a copy of the data.
 
@@ -294,7 +294,7 @@ Food.findOne({ name: 'Quiche' })
 
 Now, instead of seeing **only** the `ObjectId` that pointed us to the `Ingredient` document, we can see the **entire** `Ingredient` document.
 
-####Independent Practice: Foods & Ingredients
+#### Independent Practice: Foods & Ingredients
 
 Get it:
 * fork and clone this repo
@@ -441,11 +441,11 @@ app.put('/api/users/:userId/tweets/:id', function (req, res) {
 });
 ```
 
-###Route Design
+### Route Design
 
 Remember RESTful routing? It's the most popular modern convention for designing resource paths for nested data. Here is an example of an application that has routes for `Store` and `Item` models:
 
-###RESTful Routing
+### RESTful Routing
 | | | | |
 |---|---|---|---|
 | **HTTP Verb** | **Path** | **Description** | **Key Mongoose Method(s)** |
